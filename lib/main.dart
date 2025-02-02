@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'coupon_app.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'coupon_app.dart';
 import 'create_message_screen.dart';
 
 void main() async {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CouponListScreen(),
+      home: CouponApp(),
     );
   }
 }
@@ -182,7 +182,7 @@ class CreateMessageScreen extends StatelessWidget {
                 },
                 child: Text('Send'),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blueAccent,
+                  backgroundColor: Colors.blueAccent,
                   padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 16.0),
                   textStyle: TextStyle(fontSize: 18.0),
                 ),
