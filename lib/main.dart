@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'coupon_app.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'create_message_screen.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: CouponListScreen(),
     );
   }
 }
